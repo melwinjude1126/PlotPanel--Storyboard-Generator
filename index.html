@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-film"></i> PlotPanel- Storyboard Generator</h1>
+            <p>Create stunning storyboard images from your script.</p>
+        </header>
+        <main>
+            <form id="script-form">
+                <div class="form-group">
+                    <label for="script"><i class="fas fa-scroll"></i> Your Script</label>
+                    <textarea id="script" name="script" rows="10" placeholder="Enter your script here..."></textarea>
+                </div>
+                <button type="submit" class="btn"><i class="fas fa-magic"></i> Generate Storyboard</button>
+            </form>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Generating your storyboard...</p>
+            </div>
+            <div id="storyboard" class="hidden">
+                <h2><i class="fas fa-images"></i> Your Storyboard</h2>
+                <div id="image-grid"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Storyboard Generator. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
