@@ -1,10 +1,10 @@
-#🎬 PlotPanel: AI Storyboard Generator
+# 🎬 PlotPanel: AI Storyboard Generator
 ![Storyboard Generator Screenshot](static/images/storyboard_3.png)
 Note: This project is a proof-of-concept. The current Google Gemini API integration generates textual descriptions of scenes, not final images. See the Limitations section for details.
 
 PlotPanel is a web-based application that leverages the power of Google's Gemini AI to automatically conceptualize storyboard visuals from a written script. This tool is perfect for filmmakers, content creators, and writers who want to quickly visualize their stories.
 
-##✨ Features
+## ✨ Features
 🤖 AI Script Analysis: Utilizes Google's Gemini Pro model to interpret your script and generate corresponding textual descriptions of each scene.
 
 🖥️ Simple Web Interface: An intuitive and easy-to-use interface for entering your script and viewing the generated storyboard concepts.
@@ -22,7 +22,7 @@ PlotPanel is a web-based application that leverages the power of Google's Gemini
 
 3️⃣ View Your Concepts: The application will process your script and display the AI-generated descriptions in a grid.
 
-##🛠️ Setup & Local Installation
+## 🛠️ Setup & Local Installation
 Follow these steps to run PlotPanel on your local machine.
 
 1. Clone the Repository
@@ -63,7 +63,7 @@ Bash
 python app.py
 Open your web browser and navigate to http://127.0.0.1:5000.
 
-##💻 Technologies Used
+## 💻 Technologies Used
 ⚙️ Backend
 Flask: A lightweight WSGI web application framework in Python.
 
@@ -89,7 +89,7 @@ Flask
 google-generativeai
 python-dotenv
 Pillow
-##⚠️ Limitations
+## ⚠️ Limitations
 The most important limitation to be aware of is that the current version of the google-generativeai library and the gemini-2.5-flash-image model do not support direct text-to-image generation.
 
 The model will return a textual description of the requested image, not the image itself.
@@ -98,7 +98,7 @@ The application is set up to handle and display image data, but for now, it will
 
 For actual text-to-image generation with Google's models, you would typically need to use the Vertex AI SDK with a model like Imagen.
 
-##📈 Future Improvements
+## 📈 Future Improvements
 ✅ Integrate a Text-to-Image Model: The top priority is to integrate a true text-to-image model (like Imagen via Vertex AI) to generate actual images.
 
 🎨 Style Customization: Allow users to customize the style of the generated images (e.g., "photorealistic," "sketch," "anime").
@@ -107,12 +107,12 @@ For actual text-to-image generation with Google's models, you would typically ne
 
 👤 User Accounts: Implement user accounts and project management to save and organize multiple storyboards.
 
-##🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to open an issue or submit a pull request to improve PlotPanel.
 
-##🧑‍💻 Developer
+## 🧑‍💻 Developer
 Melwin Jude L
 🎓 Final-Year BE CSE Student | Jeppiaar Engineering College, Chennai
 
-##📄 License
+## 📄 License
 This project is for educational and personal portfolio purposes only.
