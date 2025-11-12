@@ -24,45 +24,34 @@ PlotPanel is a web-based application that leverages the power of Google's Gemini
 
 ## 🛠️ Setup & Local Installation
 Follow these steps to run PlotPanel on your local machine.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/plotpanel.git
+    cd plotpanel
+    ```
 
-1. Clone the Repository
-Bash
+2.  **Create a virtual environment and install dependencies:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    pip install -r requirements.txt
+    ```
+    *(Note: You will need to create a `requirements.txt` file. See the "Technologies Used" section for the necessary packages.)*
 
-git clone https://github.com/your-username/plotpanel.git
-cd plotpanel
-2. Create and Activate a Virtual Environment
-macOS / Linux:
+3.  **Set up your environment variables:**
+    -   Create a file named `.env` in the root of the project.
+    -   Add your Google Gemini API key to the `.env` file:
+        ```
+        GEMINI_API_KEY=your_api_key_here
+        ```
 
-Bash
+4.  **Run the application:**
+    ```bash
+    python app.py
+    ```
 
-python3 -m venv venv
-source venv/bin/activate
-Windows:
-
-Bash
-
-python -m venv venv
-.\venv\Scripts\activate
-3. Install Dependencies
-Install all required packages from the requirements.txt file.
-
-Bash
-
-pip install -r requirements.txt
-(See the Technologies Used section for the contents of this file.)
-
-4. Set Up Environment Variables
-Create a file named .env in the root of the project. Add your Google Gemini API key to this file:
-
-Ini, TOML
-
-GEMINI_API_KEY=your_api_key_here
-5. Run the Application
-Bash
-
-python app.py
-Open your web browser and navigate to http://127.0.0.1:5000.
-
+5.  Open your web browser and go to `http://127.0.0.1:5000`.
+   
 ## 💻 Technologies Used
 ⚙️ Backend
 Flask: A lightweight WSGI web application framework in Python.
